@@ -23,7 +23,10 @@
     
     StockNameViewController *stockNameViewController = (StockNameViewController *) childViewController.lastObject;
     
-        
+    
+    stockListTableViewController.delegate = stockNameViewController;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

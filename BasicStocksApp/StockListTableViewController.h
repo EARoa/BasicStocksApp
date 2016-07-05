@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol StockNameControllerDelegate <NSObject>
+//- (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath;
+@end
+
 @interface StockListTableViewController : UITableViewController{
-    
     NSMutableArray *_stocksArray;
-    
-    
 }
+
+@property (nonatomic,weak) id<StockNameControllerDelegate> delegate;
+
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StockListTableViewController.h"
 
-@interface StockNameViewController : UIViewController
+@interface StockNameViewController : UIViewController<StockNameControllerDelegate>
 
 @end
