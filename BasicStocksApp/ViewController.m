@@ -23,8 +23,7 @@
     
     StockNameViewController *stockNameViewController = (StockNameViewController *) childViewController.lastObject;
     
-    
-    
+        
 }
 
 - (void)didReceiveMemoryWarning {
