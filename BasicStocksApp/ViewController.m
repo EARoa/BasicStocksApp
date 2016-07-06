@@ -17,11 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSArray *childViewController = self.childViewControllers;
+    NSArray *childControllers = self.childViewControllers;
     
-    StockListTableViewController *stockListTableViewController = (StockListTableViewController *) childViewController.firstObject;
+    StockListTableViewController *stockListTableViewController = (StockListTableViewController *) childControllers.firstObject;
     
-    StockNameViewController *stockNameViewController = (StockNameViewController *) childViewController.lastObject;
+    StockNameViewController *stockNameViewController = (StockNameViewController *) childControllers.lastObject;
     
     
     stockListTableViewController.delegate = stockNameViewController;

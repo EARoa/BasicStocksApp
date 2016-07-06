@@ -17,15 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    _stocksArray = [NSMutableArray arrayWithObjects:@"AAPL",@"TWTR",@"GPRO",@"TSLA", nil];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    _stocksArray = [NSMutableArray arrayWithObjects:@"$AAPL",@"$GPRO",@"$SCTY",@"$SQ",@"$TSLA",@"$TWTR", nil];
+    NSLog(@"%@", _stocksArray);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,16 +35,18 @@
     return _stocksArray.count;
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
     
     NSString *name =  _stocksArray[indexPath.row];
     cell.textLabel.text = name;
     
-    
-    
     return cell;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.delegate cellPressed:_stocksArray[indexPath.row]];
 }
 
 

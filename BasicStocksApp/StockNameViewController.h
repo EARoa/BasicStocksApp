@@ -11,4 +11,6 @@
 
 @interface StockNameViewController : UIViewController<StockNameControllerDelegate>
 
+@property (nonatomic,weak) IBOutlet UILabel *stockNameLabel;
+
 @end

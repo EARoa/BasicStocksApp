@@ -314,6 +314,7 @@
 				10D895061D2C25F0001109FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

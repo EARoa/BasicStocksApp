@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "Stocks.h"
 
 
 @protocol StockNameControllerDelegate <NSObject>
-//- (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath;
+
+-(void) cellPressed: (NSString *) selectedStockName;
+
 @end
 
 @interface StockListTableViewController : UITableViewController{
