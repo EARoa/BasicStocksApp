@@ -99,17 +99,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="268"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select Stock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AL-jU-Spt">
-                                <rect key="frame" x="68" y="71" width="105" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Stock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AL-jU-Spt">
+                                <rect key="frame" x="131" y="82" width="338" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="H5R-CQ-Vp8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.24313725489999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6AL-jU-Spt" firstAttribute="centerY" secondItem="Fcz-vT-JuH" secondAttribute="centerY" id="FFK-PI-5pz"/>
-                            <constraint firstItem="6AL-jU-Spt" firstAttribute="centerX" secondItem="Fcz-vT-JuH" secondAttribute="centerX" id="l3j-m4-jBg"/>
+                            <constraint firstItem="6AL-jU-Spt" firstAttribute="top" secondItem="UUA-6Z-XMg" secondAttribute="bottom" constant="82" id="K0T-rS-l9a"/>
+                            <constraint firstItem="6AL-jU-Spt" firstAttribute="centerX" secondItem="Fcz-vT-JuH" secondAttribute="centerX" id="VkR-cS-t1G"/>
+                            <constraint firstItem="6AL-jU-Spt" firstAttribute="centerY" secondItem="Fcz-vT-JuH" secondAttribute="centerY" id="puh-lT-7Fd"/>
                         </constraints>
                     </view>
                     <connections>
